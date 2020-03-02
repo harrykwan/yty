@@ -286,6 +286,9 @@ body {font-family: 'Noto Sans HK',"Lato", sans-serif}
 
   <img src="light2.jpg" style=" filter:contrast(150%) blur(5px); border-radius: 0; "></div>
 </div>
+
+   
+<img id="payme" hidden src="payme.jpg" style="position: fixed; left:0; right: 0; margin-left: auto; margin-right: auto; width: 50%; top: 20%; border-radius: 0; filter: contrast(100%) ; z-index: 999;">
 <!-- Navbar -->
 <div class="w3-top" style="opacity: .85; z-index: 999;">
     
@@ -309,6 +312,7 @@ body {font-family: 'Noto Sans HK',"Lato", sans-serif}
     <a href="#ourteam" class="w3-bar-item w3-button w3-padding-large w3-hide-small">關於我們</a>
     
     <a href="#contact" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-phone"></i></a>
+    
   </div>
 </div>
 
@@ -993,7 +997,9 @@ body {font-family: 'Noto Sans HK',"Lato", sans-serif}
           <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
           <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
         </form>
+        
       </div>
+   
     </div>
   </div>
 
@@ -1018,7 +1024,7 @@ body {font-family: 'Noto Sans HK',"Lato", sans-serif}
 <footer style="position: relative; z-index: 998;" class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
   <i class="fa fa-facebook-official w3-hover-opacity"></i>
   <i class="fa fa-instagram w3-hover-opacity"></i>
-
+  <i onclick="showpayme()" class="fa fa-shopping-cart w3-hover-opacity"></i>
   <p class="w3-medium">YTY Studio limited</a></p>
 </footer>
 
@@ -1062,6 +1068,14 @@ function myFunction() {
     x.className += " w3-show";
   } else { 
     x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+function showpayme(){
+  if (document.getElementById('payme').hidden){
+    document.getElementById('payme').hidden = false;
+  } else {
+    document.getElementById('payme').hidden = true;
   }
 }
 
