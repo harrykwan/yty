@@ -8,6 +8,11 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans+HK:100&display=swap" rel="stylesheet">
 <style>
+  @font-face {
+    font-family: 'chinese';
+    src: url('chinese2.ttf'), /* IE9 Compat Modes */
+        url('chinese2.ttf')  format('truetype');
+  }
     * {box-sizing: border-box}
     body {font-family: 'Noto Sans HK',Verdana, sans-serif; margin:0}
     .mySlides {display: none}
@@ -119,7 +124,7 @@
 
     .w3-opacity{
       font-family: 'Noto Sans HK';
-      font-size: 15px;
+      font-size: 18px;
       padding-left: 20px;
       padding-right: 20px;
     }
@@ -132,7 +137,7 @@
     }
 
     @media only screen and (max-width: 300px) {
-      .prev, .next,.text,.w3-justify: {font-size: 10px}
+      .prev, .next,.text,.w3-justify: {font-size: 15px};
 
     }
 
@@ -258,6 +263,10 @@ a{
 h2{
   font-family: 'Noto Sans HK';
 }
+
+.w3-bar-item,.w3-bar{
+  font-family: "chinese";
+}
     </style>
     
 <style>
@@ -274,16 +283,16 @@ body {font-family: 'Noto Sans HK',"Lato", sans-serif}
 
 <div style="position: fixed; top: 0; left: 0; opacity: .2; z-index: 900; width: 100%;">
 
-  <img src="light2.jpg"></div>
+  <img src="light2.jpg" style=" filter:contrast(200%);"></div>
 </div>
 <!-- Navbar -->
 <div class="w3-top" style="opacity: .85; z-index: 999;">
     
   <div class="w3-bar w3-black w3-card">
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#home" class="w3-bar-item w3-button w3-padding-large"><img src="logo.webp" class="w3-round" alt="" style="width:30px"></a>
+    <a href="#home" class="w3-bar-item w3-button w3-padding-large"><img src="logo.webp" class="w3-round" alt="" style="width:20px"></a>
     <div class="w3-dropdown-hover w3-hide-small">
-        <button class="w3-padding-large w3-button" title="More">服務<i class="fa fa-caret-down"></i></button>     
+        <button class="w3-padding-large w3-button w3-bar" title="More">服務<i class="fa fa-caret-down"></i></button>     
         <div class="w3-dropdown-content w3-bar-block w3-card-4">
          
           <a href="#service_2" class="w3-bar-item w3-button">企業培訓 / 學校分享</a>
@@ -377,7 +386,7 @@ body {font-family: 'Noto Sans HK',"Lato", sans-serif}
     <h2 class="w3-wide">YTY Studio</h2>
     <p class="w3-opacity"><i>Youth Teaching Youth</i></p>
     <img src="clearlogo.png" style="width: 40%; margin-top: 20px; margin-bottom: 20px;">
-    <p class="w3-justify ">優青工作室 (YTY Studio) 由電視主持人和專業活動司儀創辦，為不同企業，時尚品牌，政府機構和非政府組織提供專業的司儀服務，主持的活動有頒獎典禮，年度晚宴，新聞發布會，產品發布會，高峰會等。
+    <p class="w3-justify " style="font-weight: 800;">優青工作室 (YTY Studio) 由電視主持人和專業活動司儀創辦，為不同企業，時尚品牌，政府機構和非政府組織提供專業的司儀服務，主持的活動有頒獎典禮，年度晚宴，新聞發布會，產品發布會，高峰會等。
 
  
 
@@ -387,15 +396,15 @@ body {font-family: 'Noto Sans HK',"Lato", sans-serif}
       
       <div class="w3-third">
         <p>企業培訓 / 學校分享</p>
-        <img src="imgs/cat2/part1/1.webp" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+        <img src="imgs/cat2/part1/1.webp" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%; min-height: 117px;">
       </div>
       <div class="w3-third">
         <p>司儀培訓</p>
-        <img src="imgs/cat1/1.webp" class="w3-round" alt="Random Name" style="width:60%">
+        <img src="imgs/cat1/9.webp" class="w3-round" alt="Random Name" style="width:60%; min-height: 117px;">
       </div>
       <div class="w3-third">
         <p>活動主持</p>
-        <img src="imgs/cat1.webp" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+        <img src="imgs/cat1.webp" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%; min-height: 117px;">
       </div>
     </div>
   </div>
@@ -420,21 +429,15 @@ body {font-family: 'Noto Sans HK',"Lato", sans-serif}
       <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
         <div class="w3-third w3-margin-bottom">
           <img src="imgs/cat2/part1/1.webp" alt="New York" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <!-- <p class="w3-opacity">Fri 27 Nov 2016</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p> -->
-            <!-- <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button> -->
-          </div>
+
         </div>
         <div class="w3-third w3-margin-bottom">
           <img src="imgs/cat2/part1/4.webp" alt="New York" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-       </div>
+
         </div>
         <div class="w3-third w3-margin-bottom">
           <img src="imgs/cat2/part1/3.webp" alt="New York" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-          </div>
+  
         </div>
         </div>
 
@@ -444,28 +447,22 @@ body {font-family: 'Noto Sans HK',"Lato", sans-serif}
 
 
       <h2 class="w3-wide w3-center">學校及非牟利機構分享</h2>
-      <p class="w3-opacity w3-center">我們把活動主持及電視主持的經驗分享給中學生以及大學生,讓他們對這行業有更深入的認識。<br>另外,他們更有機會嘗試當一名主持。</p><br>
+      <p class="w3-opacity w3-center">我們把活動主持及電視主持的經驗分享給中學生以及大學生,讓他們對這行業有更深入的認識。另外,他們更有機會嘗試當一名主持。</p><br>
 
 
 
       <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
         <div class="w3-third w3-margin-bottom">
           <img src="imgs/cat2/part2/4.webp" alt="New York" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <!-- <p class="w3-opacity">Fri 27 Nov 2016</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p> -->
-            <!-- <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button> -->
-          </div>
+    
         </div>
         <div class="w3-third w3-margin-bottom">
           <img src="imgs/cat2/part2/2.webp" alt="New York" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-           </div>
+   
         </div>
         <div class="w3-third w3-margin-bottom">
           <img src="imgs/cat2/part2/3.webp" alt="New York" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-          </div>
+
         </div>
         </div>
 
